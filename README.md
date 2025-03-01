@@ -13,9 +13,11 @@ my portfolio will have 4 pages
                 name
                 profession
                 button to take you to portfolio page
+                Social links e.g mail,github
 
-  ### styling of homepage
-   
+      
   ### About
+
+  
   ### Portfolio
   ### Contact ME
