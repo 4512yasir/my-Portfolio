@@ -108,3 +108,129 @@ body {
         margin: 10px 0;
     }
 }
+
+
+/* Content Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    color: white;
+    padding: 40px 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Profile Photo Animation */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Text Fade-In Effect */
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.8s ease-in-out 1s forwards;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.8s ease-in-out 1.2s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Hover Effect */
+.btn button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn button:hover {
+    background: #e68900;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #222;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #ff9800;
+    transform: scale(1.2);
+}
