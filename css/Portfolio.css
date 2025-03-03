@@ -6,8 +6,7 @@ body {
     background-color: grey;
 }
 
-
-* Navbar Styling */
+/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -52,6 +51,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
 .nav-links li {
@@ -106,10 +106,9 @@ body {
     }
 }
 
-
 /* Portfolio Section */
 .portfolio {
-    padding: 180px;
+    padding: 80px 20px;
     text-align: center;
 }
 
@@ -119,9 +118,11 @@ body {
     margin-bottom: 30px;
 }
 
+/* Project Cards */
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -132,6 +133,7 @@ body {
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    max-width: 300px;
 }
 
 .project-card:hover {
@@ -158,13 +160,15 @@ body {
 
 .project-card .view-btn {
     display: block;
-    margin: 15px;
+    margin: 15px auto;
     padding: 10px 20px;
     background: #ff5733;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
+    text-align: center;
+    width: fit-content;
 }
 
 .project-card .view-btn:hover {
